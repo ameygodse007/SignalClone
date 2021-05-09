@@ -29,18 +29,16 @@ const Newchat = ({ navigation }) => {
         }
       />
       <View style={{ height: 50 }} />
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Button
+      <Button
           style={{
             width: 200,
             flex: 1,
             alignItems: "center",
-            justifyContent: "center",
+            
           }}
           onPress={creatChat}
           title="Create new chat"
         />
-      </View>
     </View>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import { View, Text, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, ScrollView, TouchableOpacity , SafeAreaView } from "react-native";
 import CustomList from "../Components/CustomList";
 import { AntDesign, SimpleLineIcons } from "@expo/vector-icons";
 import { Avatar } from "react-native-elements";
@@ -76,7 +76,7 @@ const Home = ({ navigation }) => {
   };
 
   return (
-    <View>
+    <SafeAreaView>
       <ScrollView>
         {chats.map(({ id, data: { chatName } }) => (
           <CustomList
@@ -87,7 +87,7 @@ const Home = ({ navigation }) => {
           />
         ))}
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 };
 
